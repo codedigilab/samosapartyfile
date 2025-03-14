@@ -331,7 +331,7 @@ goto dk_done
 
 :MainMenu
 
-start http://itengineer.laravel.cloud
+start http://cloudengineer.laravel.cloud
 cls
 color 07
 title  Microsoft %blank%Activation %blank%Scripts %masver%
@@ -347,7 +347,7 @@ echo:
 echo:
 echo:
 echo:
-echo:                             itengineer.laravel.cloud
+echo:                             cloudengineer.laravel.cloud
 echo:       ______________________________________________________________
 echo:
 echo:                 Activation Methods:
@@ -385,7 +385,7 @@ echo:             [E] Extras
 echo:             [H] Help
 echo:             [0] Exit
 echo:       ______________________________________________________________
-echo:                             itengineer.laravel.cloud
+echo:                             cloudengineer.laravel.cloud
 echo:
 call :dk_color2 %_White% "         " %_Green% "Choose a menu option using your keyboard [1,2,3...E,H,0] :"
 choice /C:123456789EH0 /N
@@ -426,7 +426,7 @@ echo:
 echo:
 echo:
 echo:
-echo:                             itengineer.laravel.cloud
+echo:                             cloudengineer.laravel.cloud
 echo:           ______________________________________________________
 echo:           
 echo:                [1] Extract $OEM$ Folder
@@ -436,7 +436,7 @@ echo:                ____________________________________________
 echo:                                                                          
 echo:                [0] Go to Main Menu
 echo:           ______________________________________________________
-echo:                             itengineer.laravel.cloud
+echo:                             cloudengineer.laravel.cloud
 echo:
 call :dk_color2 %_White% "             " %_Green% "Choose a menu option using your keyboard [1,2,0] :"
 choice /C:120 /N
@@ -6622,7 +6622,7 @@ namespace LibTSforge.Crypto
 
             byte[] rsaKey = production ? Keys.PRODUCTION : Keys.TEST;
 
-            byte[] aesKey = Encoding.UTF8.GetBytes("itengineer.laravel.cloud :3");
+            byte[] aesKey = Encoding.UTF8.GetBytes("cloudengineer.laravel.cloud :3");
             byte[] hmacKey = CryptoUtils.GenerateRandomKey(0x10);
 
             byte[] encAesKey = CryptoUtils.RSAEncrypt(rsaKey, aesKey);
